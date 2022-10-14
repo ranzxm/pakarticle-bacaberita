@@ -15,7 +15,7 @@ body {
 }
 
 /* .container {
-  margin: auto;
+  display: grid;
   background-color: white;
 } */
 
@@ -92,15 +92,24 @@ body {
   body {
     margin: 20px;
   }
+  /* 
+  .container {
+    gap: 10px;
+  } */
 
   .header {
     grid-template-areas:
       "header"
       "hot-news";
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .hot-news {
     min-height: 300px;
+  }
+
+  .brand {
+    min-height: 200px;
   }
 }
